@@ -1,0 +1,451 @@
+object Form1: TForm1
+  Left = 330
+  Height = 716
+  Top = 24
+  Width = 957
+  ActiveControl = RadioButton1
+  Caption = 'Accase básico Image-Canvas'
+  ClientHeight = 716
+  ClientWidth = 957
+  Font.Style = [fsBold]
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object ScrollBox1: TScrollBox
+    Left = 40
+    Height = 271
+    Top = 48
+    Width = 347
+    HorzScrollBar.Page = 345
+    VertScrollBar.Page = 269
+    ClientHeight = 269
+    ClientWidth = 345
+    TabOrder = 0
+    OnMouseDown = ScrollBox1MouseDown
+    object Image1: TImage
+      Left = 0
+      Height = 45
+      Top = 0
+      Width = 60
+      AutoSize = True
+      Enabled = False
+      OnClick = Image1Click
+      OnMouseDown = Image1MouseDown
+      OnMouseMove = Image1MouseMove
+      Proportional = True
+    end
+  end
+  object StaticText1: TStaticText
+    Left = 432
+    Height = 25
+    Top = 48
+    Width = 144
+    Caption = 'Operaciones'
+    OnClick = StaticText1Click
+    TabOrder = 1
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 21
+    Top = 695
+    Width = 957
+    Panels = <    
+      item
+        Text = 'xy'
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Text = 'RGB'
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Width = 50
+      end    
+      item
+        Text = 'tamaño'
+        Width = 90
+      end    
+      item
+        Width = 90
+      end    
+      item
+        Text = 'tiempo'
+        Width = 90
+      end    
+      item
+        Width = 90
+      end    
+      item
+        Text = 'Filtro'
+        Width = 50
+      end    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object Button1: TButton
+    Left = 432
+    Height = 25
+    Top = 80
+    Width = 125
+    Caption = 'Filtro negavito'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 432
+    Height = 25
+    Top = 128
+    Width = 125
+    Caption = 'Binarizacion'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 432
+    Height = 25
+    Top = 176
+    Width = 125
+    Caption = 'Histograma'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object Image2: TImage
+    Left = 608
+    Height = 176
+    Top = 48
+    Width = 272
+    OnClick = Image2Click
+  end
+  object RadioButton1: TRadioButton
+    Left = 904
+    Height = 24
+    Top = 56
+    Width = 30
+    Caption = 'I'
+    Checked = True
+    OnChange = RadioButton1Change
+    TabOrder = 6
+    TabStop = True
+  end
+  object RadioButton2: TRadioButton
+    Left = 904
+    Height = 24
+    Top = 88
+    Width = 35
+    Caption = 'R'
+    TabOrder = 7
+  end
+  object RadioButton3: TRadioButton
+    Left = 904
+    Height = 24
+    Top = 120
+    Width = 36
+    Caption = 'G'
+    TabOrder = 8
+  end
+  object RadioButton4: TRadioButton
+    Left = 904
+    Height = 24
+    Top = 152
+    Width = 35
+    Caption = 'B'
+    TabOrder = 9
+  end
+  object Button4: TButton
+    Left = 432
+    Height = 25
+    Top = 224
+    Width = 125
+    Caption = 'Falso color'
+    OnClick = Button4Click
+    TabOrder = 10
+  end
+  object Button5: TButton
+    Left = 40
+    Height = 25
+    Top = 336
+    Width = 136
+    Caption = 'Restaurar Imagen'
+    OnClick = Button5Click
+    TabOrder = 11
+  end
+  object Button6: TButton
+    Left = 616
+    Height = 25
+    Top = 240
+    Width = 120
+    Caption = 'Desplazamiento'
+    OnClick = Button6Click
+    TabOrder = 12
+  end
+  object Button7: TButton
+    Left = 432
+    Height = 25
+    Top = 272
+    Width = 125
+    Caption = 'Sobel'
+    OnClick = Button7Click
+    TabOrder = 13
+  end
+  object Button8: TButton
+    Left = 432
+    Height = 25
+    Top = 320
+    Width = 125
+    Caption = 'Op. Aritmeticas'
+    OnClick = Button8Click
+    TabOrder = 14
+  end
+  object Button9: TButton
+    Left = 432
+    Height = 25
+    Top = 368
+    Width = 125
+    Caption = 'Zoom in'
+    OnClick = Button9Click
+    TabOrder = 15
+  end
+  object Image3: TImage
+    Left = 222
+    Height = 33
+    Top = 328
+    Width = 165
+  end
+  object Button10: TButton
+    Left = 40
+    Height = 25
+    Top = 400
+    Width = 136
+    Caption = 'Contraste'
+    OnClick = Button10Click
+    TabOrder = 16
+  end
+  object TrackBar1: TTrackBar
+    Left = 225
+    Height = 46
+    Top = 392
+    Width = 163
+    Max = 15
+    Min = 1
+    OnChange = TrackBar1Change
+    Position = 1
+    TabOrder = 17
+  end
+  object Button11: TButton
+    Left = 434
+    Height = 25
+    Top = 409
+    Width = 123
+    Caption = 'Zoom out'
+    OnClick = Button11Click
+    TabOrder = 18
+  end
+  object Button12: TButton
+    Left = 584
+    Height = 25
+    Top = 368
+    Width = 120
+    Caption = 'Rotacion +90'
+    OnClick = Button12Click
+    TabOrder = 19
+  end
+  object Button13: TButton
+    Left = 584
+    Height = 25
+    Top = 409
+    Width = 120
+    Caption = 'Rotacion -90'
+    OnClick = Button13Click
+    TabOrder = 20
+  end
+  object Button14: TButton
+    Left = 24
+    Height = 25
+    Top = 488
+    Width = 160
+    Caption = 'Segmentacion gris'
+    OnClick = Button14Click
+    TabOrder = 21
+  end
+  object TrackBar2: TTrackBar
+    Left = 227
+    Height = 46
+    Top = 544
+    Width = 161
+    Max = 50
+    Position = 0
+    TabOrder = 22
+  end
+  object Label1: TLabel
+    Left = 272
+    Height = 18
+    Top = 528
+    Width = 74
+    Caption = 'Tolerancia'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 272
+    Height = 18
+    Top = 384
+    Width = 40
+    Caption = 'alpha'
+    ParentColor = False
+  end
+  object TrackBar3: TTrackBar
+    Left = 256
+    Height = 46
+    Top = 472
+    Width = 100
+    Max = 255
+    Position = 0
+    TabOrder = 23
+  end
+  object Label3: TLabel
+    Left = 288
+    Height = 18
+    Top = 459
+    Width = 36
+    Caption = 'Tono'
+    ParentColor = False
+  end
+  object Button15: TButton
+    Left = 434
+    Height = 25
+    Top = 456
+    Width = 123
+    Caption = 'Ojos rojos'
+    OnClick = Button15Click
+    TabOrder = 24
+  end
+  object Button16: TButton
+    Left = 440
+    Height = 25
+    Top = 504
+    Width = 117
+    Caption = 'Lluvia'
+    OnClick = Button16Click
+    TabOrder = 25
+  end
+  object Button17: TButton
+    Left = 440
+    Height = 25
+    Top = 552
+    Width = 117
+    Caption = 'Venas'
+    OnClick = Button17Click
+    TabOrder = 26
+  end
+  object Button18: TButton
+    Left = 616
+    Height = 25
+    Top = 280
+    Width = 120
+    Caption = 'Expansion Automatica'
+    OnClick = Button18Click
+    TabOrder = 27
+  end
+  object MainMenu1: TMainMenu
+    left = 416
+    top = 16
+    object MenuItem1: TMenuItem
+      Caption = 'Archivo'
+      object MenuItem13: TMenuItem
+        Caption = 'Guardar como'
+        OnClick = MenuItem13Click
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Guardar'
+        OnClick = MenuItem14Click
+      end
+      object MenuItem19: TMenuItem
+        Caption = 'Deshacer'
+        OnClick = MenuItem19Click
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Abrir-Canvas'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Abir con skyline'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Aplicar filtro negativo'
+        object MenuItem5: TMenuItem
+          Caption = 'RGB'
+          OnClick = MenuItem5Click
+        end
+        object MenuItem6: TMenuItem
+          Caption = 'R'
+          OnClick = MenuItem6Click
+        end
+        object MenuItem7: TMenuItem
+          Caption = 'G'
+          OnClick = MenuItem7Click
+        end
+        object MenuItem8: TMenuItem
+          Caption = 'B'
+          OnClick = MenuItem8Click
+        end
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Aplicar grises uno'
+        OnClick = MenuItem9Click
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Aplicar grises prom'
+        OnClick = MenuItem10Click
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Aplicar binarizacion'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Aplicar filtro gama'
+        OnClick = MenuItem12Click
+      end
+      object MenuItem18: TMenuItem
+        Caption = 'Bordes primer grado'
+        OnClick = MenuItem18Click
+      end
+      object MenuItem15: TMenuItem
+        Caption = 'Convolucion'
+        OnClick = MenuItem15Click
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'Incluir ruido'
+        OnClick = MenuItem16Click
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Mediana'
+        OnClick = MenuItem17Click
+      end
+    end
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Width = 885
+    Height = 630
+    Filter = 'Bitmaps (*.bmp)|*.bmp'
+    left = 488
+    top = 16
+  end
+  object SaveDialog1: TSaveDialog
+    left = 552
+    top = 16
+  end
+end

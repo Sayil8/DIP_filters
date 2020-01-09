@@ -1,0 +1,121 @@
+object Form2: TForm2
+  Left = 587
+  Height = 377
+  Top = 289
+  Width = 320
+  BorderStyle = bsSingle
+  Caption = 'Binarizacion'
+  ClientHeight = 377
+  ClientWidth = 320
+  OnCreate = FormCreate
+  LCLVersion = '1.0.10.0'
+  object TrackBar1: TTrackBar
+    Left = 104
+    Height = 46
+    Top = 248
+    Width = 100
+    Max = 255
+    OnChange = TrackBar1Change
+    Position = 0
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 48
+    Height = 30
+    Top = 320
+    Width = 83
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object BitBtn2: TBitBtn
+    Left = 192
+    Height = 30
+    Top = 320
+    Width = 88
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object Shape1: TShape
+    Left = 139
+    Height = 25
+    Top = 104
+    Width = 65
+    Brush.Color = clBlack
+    OnChangeBounds = Shape1ChangeBounds
+    OnMouseDown = Shape1MouseDown
+  end
+  object Shape2: TShape
+    Left = 139
+    Height = 28
+    Top = 164
+    Width = 65
+    OnChangeBounds = Shape2ChangeBounds
+    OnMouseDown = Shape2MouseDown
+  end
+  object StaticText1: TStaticText
+    Left = 24
+    Height = 24
+    Top = 104
+    Width = 65
+    Caption = 'Color 1:'
+    TabOrder = 3
+  end
+  object StaticText2: TStaticText
+    Left = 24
+    Height = 24
+    Top = 164
+    Width = 65
+    Caption = 'Color 2:'
+    TabOrder = 4
+  end
+  object StaticText3: TStaticText
+    Left = 24
+    Height = 27
+    Top = 45
+    Width = 208
+    Caption = 'Seleccionar Colores'
+    TabOrder = 5
+  end
+  object StaticText4: TStaticText
+    Left = 112
+    Height = 22
+    Top = 226
+    Width = 79
+    Caption = 'Promedio'
+    TabOrder = 6
+  end
+  object ColorDialog1: TColorDialog
+    Color = clBlack
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 280
+    top = 8
+  end
+end

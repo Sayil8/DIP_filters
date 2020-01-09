@@ -1,0 +1,223 @@
+object Form3: TForm3
+  Left = 369
+  Height = 647
+  Top = 74
+  Width = 975
+  BorderStyle = bsSingle
+  Caption = 'Operaciones Aritmeticas'
+  ClientHeight = 647
+  ClientWidth = 975
+  LCLVersion = '1.0.10.0'
+  object ScrollBox1: TScrollBox
+    Left = 56
+    Height = 250
+    Top = 96
+    Width = 250
+    HorzScrollBar.Page = 248
+    VertScrollBar.Page = 248
+    ClientHeight = 248
+    ClientWidth = 248
+    DragMode = dmAutomatic
+    TabOrder = 0
+    object Image1: TImage
+      Left = -1
+      Height = 90
+      Top = -1
+      Width = 90
+      AutoSize = True
+      DragMode = dmAutomatic
+      Enabled = False
+    end
+  end
+  object ScrollBox2: TScrollBox
+    Left = 672
+    Height = 250
+    Top = 96
+    Width = 250
+    HorzScrollBar.Page = 248
+    VertScrollBar.Page = 248
+    ClientHeight = 248
+    ClientWidth = 248
+    DragMode = dmAutomatic
+    TabOrder = 1
+    object Image2: TImage
+      Left = -1
+      Height = 90
+      Top = -1
+      Width = 90
+      AutoSize = True
+      DragMode = dmAutomatic
+      Enabled = False
+    end
+  end
+  object ScrollBox3: TScrollBox
+    Left = 320
+    Height = 208
+    Top = 360
+    Width = 341
+    HorzScrollBar.Page = 339
+    VertScrollBar.Page = 206
+    ClientHeight = 206
+    ClientWidth = 339
+    TabOrder = 2
+    object Image3: TImage
+      Left = -1
+      Height = 90
+      Top = -1
+      Width = 90
+      AutoSize = True
+      Enabled = False
+    end
+  end
+  object Image4: TImage
+    Left = 56
+    Height = 58
+    Top = 24
+    Width = 250
+  end
+  object Label1: TLabel
+    Left = 56
+    Height = 18
+    Top = 360
+    Width = 31
+    Caption = 'NOT'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 321
+    Height = 18
+    Top = 176
+    Width = 38
+    Caption = 'Suma'
+    ParentColor = False
+    OnClick = Label2Click
+    OnDragDrop = Label2DragDrop
+    OnDragOver = Label2DragOver
+    OnEndDrag = Label2EndDrag
+  end
+  object Label3: TLabel
+    Left = 320
+    Height = 18
+    Top = 264
+    Width = 96
+    Caption = 'Multiplicacion'
+    ParentColor = False
+    OnDragDrop = Label3DragDrop
+    OnDragOver = Label3DragOver
+    OnEndDrag = Label3EndDrag
+  end
+  object Label4: TLabel
+    Left = 320
+    Height = 18
+    Top = 216
+    Width = 39
+    Caption = 'Resta'
+    ParentColor = False
+    OnDragDrop = Label4DragDrop
+    OnDragOver = Label4DragOver
+    OnEndDrag = Label4EndDrag
+  end
+  object Label5: TLabel
+    Left = 888
+    Height = 18
+    Top = 360
+    Width = 31
+    Caption = 'NOT'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 629
+    Height = 18
+    Top = 176
+    Width = 32
+    Caption = 'AND'
+    ParentColor = False
+    OnDragDrop = Label6DragDrop
+    OnDragOver = Label6DragOver
+    OnEndDrag = Label6EndDrag
+  end
+  object Label7: TLabel
+    Left = 632
+    Height = 18
+    Top = 264
+    Width = 30
+    Caption = 'XOR'
+    ParentColor = False
+    OnDragDrop = Label7DragDrop
+    OnDragOver = Label7DragOver
+    OnEndDrag = Label7EndDrag
+  end
+  object Label8: TLabel
+    Left = 640
+    Height = 18
+    Top = 216
+    Width = 21
+    Caption = 'OR'
+    ParentColor = False
+    OnDragDrop = Label8DragDrop
+    OnDragOver = Label8DragOver
+    OnEndDrag = Label8EndDrag
+  end
+  object BitBtn1: TBitBtn
+    Left = 809
+    Height = 30
+    Top = 488
+    Width = 113
+    Caption = '&Cargar'
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 3
+  end
+  object BitBtn2: TBitBtn
+    Left = 809
+    Height = 30
+    Top = 528
+    Width = 113
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 106
+    Top = 176
+    Width = 27
+    Caption = 'UP'
+    OnClick = Button1Click
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 936
+    Height = 106
+    Top = 176
+    Width = 27
+    Caption = 'UP'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Image5: TImage
+    Left = 672
+    Height = 58
+    Top = 24
+    Width = 252
+    Enabled = False
+  end
+  object Image6: TImage
+    Left = 320
+    Height = 48
+    Top = 584
+    Width = 250
+    Enabled = False
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    left = 448
+    top = 40
+  end
+  object OpenPictureDialog2: TOpenPictureDialog
+    left = 520
+    top = 40
+  end
+end

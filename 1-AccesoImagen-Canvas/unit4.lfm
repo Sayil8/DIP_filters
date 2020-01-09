@@ -1,0 +1,73 @@
+object Form4: TForm4
+  Left = 907
+  Height = 336
+  Top = 366
+  Width = 448
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsNone
+  Caption = 'Matriz de convolucion'
+  ClientHeight = 336
+  ClientWidth = 448
+  OnCreate = FormCreate
+  ShowInTaskBar = stNever
+  LCLVersion = '1.0.10.0'
+  object StringGrid1: TStringGrid
+    Left = 41
+    Height = 208
+    Top = 40
+    Width = 199
+    AutoEdit = False
+    ColCount = 3
+    ColumnClickSorts = True
+    DefaultColWidth = 39
+    DefaultRowHeight = 40
+    FixedCols = 0
+    FixedRows = 0
+    GridLineWidth = 2
+    Options = [goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll, goScrollKeepVisible]
+    RowCount = 3
+    TabOrder = 0
+  end
+  object StaticText1: TStaticText
+    Left = 64
+    Height = 32
+    Top = 8
+    Width = 185
+    Caption = 'Ingresa Matriz Convolucion'
+    TabOrder = 1
+  end
+  object TrackBar1: TTrackBar
+    Left = 72
+    Height = 46
+    Top = 264
+    Width = 128
+    LineSize = 2
+    Max = 5
+    Min = 2
+    OnChange = TrackBar1Change
+    Position = 2
+    TabOrder = 2
+  end
+  object BitBtn1: TBitBtn
+    Left = 336
+    Height = 30
+    Top = 240
+    Width = 83
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object BitBtn2: TBitBtn
+    Left = 336
+    Height = 30
+    Top = 280
+    Width = 83
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+end
